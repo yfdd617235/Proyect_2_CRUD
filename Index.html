@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="listIcon.svg">
+    <title>CRUD_Operations</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="header">
+        <img id="listIcon" src="listIcon.svg" alt="">
+        <p> - - CRUD - Create, Read, Update, Delete</p>
+    </div>
+
+    <div id="info">
+        <div id="title">
+            <h1>CRUD - OPERATIONS</h1>
+            <h2>Data Form</h2>
+        </div>
+
+        <form id="form">
+            <fieldset>
+                <legend><h2>Form</h2></legend>
+                <input legend="Nom" type="text" id="name" name="name" placeholder="Name"><br><br>
+                <input type="text" id="job" name="job" placeholder="Job"><br><br>
+                <input type="text" id="exp" name="exp" placeholder="Experience"><br><br>
+                <input type="button" value="Submit" id="btn" onclick="Submit()">
+                <input type="reset" value="Reset" id="btn">
+            </fieldset>
+        </form>
+
+        <br><br>
+        <div id="msg"></div><br>
+
+        <fieldset>
+            <legend><h2>Data Table</h2></legend>
+            <table border="1" id="table">
+                <tr>
+                    <td class="col">Name</td>
+                    <td class="col">Job</td>
+                    <td class="col">Experience</td>
+                    <td class="col">Action</td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2023 Yosef David Girado Salazar. All rights reserved.</p>
+    </div>
+
+    <script src="main.js" ></script>
 </body>
 </html>
