@@ -72,7 +72,7 @@ function insert(readData){
     row.insertCell(2).innerHTML = readData[2];
     row.insertCell(3).innerHTML = `<button onclick="edit(this)" id="editbtn">Edit</button> 
     <button onclick="remove(this)" id="deletebtn">Delete</button> `;
-
+    
 };
 
 
