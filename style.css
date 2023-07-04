@@ -1,0 +1,114 @@
+
+:root{
+    --blue: #002345;
+    --lightblue: #2e5b88;
+    --veryLightBlue: rgb(132, 188, 203);
+    --gray: gray;
+    --white: white;
+}
+
+#header{
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: left;
+    padding: 0 0 0 10%;
+    color: white;
+    height: 50px;
+}
+
+#listIcon{
+    height: 30px;
+    margin: 10px;
+}
+
+#info{
+    color: black;
+    /* text-shadow: 2px 2px 4px black; */
+    text-align: center;
+    margin: 10%;
+}
+
+h1{
+    color: black;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#btn{
+    background: #FFE100;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#btn:hover{
+    background: rgb(45, 167, 155);
+    cursor: pointer;
+    color: white;
+}
+
+table{
+    /* color: var(--white); */
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.col{
+    font-weight: bold;
+    /* text-shadow: 5px 5px 5px black; */
+    font-size: larger;
+    padding: 10px;
+}
+
+#msg{
+    color: var(--white);
+}
+
+#deletebtn{
+    background: red;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+#deletebtn:hover{
+    background: rgb(129, 0, 0);
+    border-radius: 5px;
+}
+
+#editbtn{
+    background: var(--veryLightBlue);
+    border-radius: 5px;
+    color: black;
+    border: none;
+}
+
+#editbtn:hover{
+    background: gray;
+    cursor: pointer;
+    color: white;
+}
+
+#footer{
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50px;
+}
+
