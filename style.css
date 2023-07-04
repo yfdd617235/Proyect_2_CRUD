@@ -72,6 +72,8 @@ fieldset{
     /* text-shadow: 5px 5px 5px black; */
     font-size: larger;
     padding: 10px;
+    background-color: #002345;
+    color: var(--white);
 }
 
 #msg{
