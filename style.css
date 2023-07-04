@@ -122,9 +122,11 @@ fieldset{
 
 @media (max-width: 1024px) {
     fieldset{
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
     #info{
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
   }
