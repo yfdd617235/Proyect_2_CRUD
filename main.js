@@ -10,7 +10,11 @@ let row = null; //for Submit function
 function Submit(){ //This function was called in HTML file
     let dataEntered = retrieveData();
     let readData = readingDataFromLocalStorage(dataEntered);
-    console.log(readData);
+
+    if(dataEntered == false){
+        msg.innerHTML = "Please enter all data!";
+    }else{
+        console.log(readData);
 
     if(row == null){
         insert(readData);
@@ -19,10 +23,11 @@ function Submit(){ //This function was called in HTML file
         update();
         msg.innerHTML = "Data Updated!"
     };
-    
-    document.getElementById("name").value ="";
-    document.getElementById("job").value ="";;
-    document.getElementById("exp").value ="";;
+    }
+    // document.getElementById("name").value ="";
+    // document.getElementById("job").value ="";;
+    // document.getElementById("exp").value ="";;
+    document.getElementById("form").reset(); // resete the vaules of form
 };
 
 // CREATE
@@ -33,7 +38,12 @@ function retrieveData(){
     let exp = document.getElementById("exp").value;
 
     let array = [name1, job, exp];
-    return array; //Is is necesarry to return the array because they are multiple values
+    if(array.includes("")){
+        return false
+    } else{
+        return array; //Is is necesarry to return the array because they are multiple values
+    }
+    
 };
 
 // READ
@@ -96,7 +106,6 @@ function remove(btn){
     if(answer === true){
         row = btn.parentElement.parentElement; //Obtains the row the button belongs to
         // document.getElementById("table").deleteRow(row.rowIndex);
-        
         row.remove();
 
     }
