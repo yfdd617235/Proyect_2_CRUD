@@ -27,7 +27,7 @@ function Submit(){ //This function was called in HTML file
     // document.getElementById("name").value ="";
     // document.getElementById("job").value ="";;
     // document.getElementById("exp").value ="";;
-    document.getElementById("form").reset(); // resete the vaules of form
+    document.getElementById("form").reset(); // resete the vaules of form  
 };
 
 // CREATE
